@@ -28,7 +28,7 @@ else if(e.target.tagName === "SPAN"){
 },false);
 
 function saveData(){
-    locationStorage.setItem("data", listContainer.innerHTML);
+    localStorage.setItem("data", listContainer.innerHTML);
 }
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
